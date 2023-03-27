@@ -1,0 +1,10 @@
+import sys
+L=["a","o","y","i","e","u","A","O","Y","I","E","U"]
+A= [line for line in sys.stdin]
+C=0
+for line in A:
+    for letter in line:
+        if letter in L:
+            C+=1
+    print(C)
+    C=0
