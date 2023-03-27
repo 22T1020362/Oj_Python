@@ -1,0 +1,14 @@
+import sys
+L = [line for line in sys.stdin]
+L1=[]
+for line in L:
+    mStr=line.lower()
+    for i in mStr:
+        if  "a"<=i<="z":
+            L1.append(i)
+    mStr="".join(L1)
+    if mStr[::-1]==mStr:
+        print("Yes")
+    else:
+        print("No")
+    L1.clear()
