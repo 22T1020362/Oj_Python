@@ -1,0 +1,10 @@
+import sys
+n=int(input())
+L=[line for line in sys.stdin]
+for l in L:
+    st=""
+    for i in range (len(l)):
+        if l[i] >='a' and l[i]<='z':
+            st=st+chr((ord(l[i])-97+n)%26+97)
+        else: st = st + ' '
+    print(st)
