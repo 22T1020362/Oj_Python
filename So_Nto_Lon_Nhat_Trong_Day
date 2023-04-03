@@ -1,0 +1,15 @@
+def SNT(x):
+    for i in range (2,int(x**0.5)):
+        if (x%i==0):
+            return False
+    if x>1:
+        return True
+    else:
+        return False
+n=int(input())
+A=list(map(int,input().split()))
+L=[] #danh sach cac so nguyen to
+for x in A:
+    if SNT(x)==True:
+        L.append(x)
+print(max(L))
