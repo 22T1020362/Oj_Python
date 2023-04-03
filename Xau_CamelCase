@@ -1,0 +1,8 @@
+import sys
+L=[line for line in sys.stdin]
+for line in L:
+    c=0
+    for i in range(len(line)):
+        if line[i]>='A' and line[i]<='Z':
+            c=c+1
+    print(c+1)   
