@@ -1,0 +1,8 @@
+s=input()
+a=s.find('A')
+b=[]
+b=list(s)
+b.reverse()
+s=''.join(b)
+n=s.find('Z')
+print(len(s)-n-a)
