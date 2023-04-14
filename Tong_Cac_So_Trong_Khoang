@@ -1,0 +1,14 @@
+def sumdigits(n):
+    s=0
+    while n!=0:
+        s=s+n%10
+        n=n//10
+    return s
+
+n=int(input())
+A,B=map(int,input().split())
+s=0
+for i in range(1,n+1):
+    if sumdigits(i)>=A and sumdigits(i)<=B:
+        s=s+i
+print(s)
